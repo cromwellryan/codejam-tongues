@@ -1,3 +1,8 @@
+var alphabet = 'abcdefghijklmnopqrstuvwxyz',
+    place = function() { return alphabet.indexOf('a'); },
+    GKey = 'y',
+    EKey = 'a',
+    offset = function() { return place(GKey) - place(EKey); }();
 
 function translateone( letter ) {
   if( letter === 'o' )
@@ -7,4 +12,6 @@ function translateone( letter ) {
   return 'y';
 };
 
-module.exports = translateone;
+module.exports = {
+  toG: translateone
+};
