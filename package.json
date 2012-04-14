@@ -1,0 +1,13 @@
+{
+  "author": "Ryan Cromwell <ryan@echelontouch.com> (http://cromwellhaus.com)",
+  "name": "tongues",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine-node": "latest"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
