@@ -1,7 +1,7 @@
 var _ = require('./underscore');
 
-var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-var glphabet = 'yzficwlbkuomxsevnpdrjgthaq'
+var alphabet = ' abcdefghijklmnopqrstuvwxyz';
+var glphabet = ' ynficwlbkuomxsevzpdrjgthaq'
 
 function translateone( letter ) {
 
