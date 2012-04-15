@@ -7,20 +7,19 @@ var log = function(msg) {
 
 describe('translate', function() {
   describe('English letters to Googlerese letters', function() {
-    it('a -> y', function() {
-      expect( translate.toG('a') ).toBe('y');
+    it('y -> a', function() {
+      expect( translate('y') ).toBe('a');
     });
 
 
-    it('o -> e', function() {
-      expect( translate.toG('o') ).toBe('e');
+    it('e -> o', function() {
+      expect( translate('e') ).toBe('o');
     });
 
-    it('z -> q', function() {
-      expect( translate.toG('z') ).toBe('q');
+    it('q -> z', function() {
+      expect( translate('q') ).toBe('z');
     });
   });
-
 });
 
 return ;

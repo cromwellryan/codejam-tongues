@@ -1,17 +1,11 @@
-var alphabet = 'abcdefghijklmnopqrstuvwxyz',
-    place = function() { return alphabet.indexOf('a'); },
-    GKey = 'y',
-    EKey = 'a',
-    offset = function() { return place(GKey) - place(EKey); }();
+var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+var glphabet = 'yzficwlbkuomxsevnpdrjgthaq'
 
 function translateone( letter ) {
-  if( letter === 'o' )
-    return 'e';
-  if( letter === 'z' )
-    return 'q';
-  return 'y';
+
+  var index = glphabet.indexOf(letter);
+  
+  return alphabet[index];
 };
 
-module.exports = {
-  toG: translateone
-};
+module.exports = translateone;
