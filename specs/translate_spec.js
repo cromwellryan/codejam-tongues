@@ -6,7 +6,7 @@ var log = function(msg) {
 };
 
 describe('translate', function() {
-  describe('English letters to Googlerese letters', function() {
+  describe('Googlerese letters to English letters', function() {
     it('y -> a', function() {
       expect( translate('y') ).toBe('a');
     });
@@ -18,6 +18,11 @@ describe('translate', function() {
 
     it('q -> z', function() {
       expect( translate('q') ).toBe('z');
+    });
+  });
+  describe('G sentence to E sentence', function() {
+    it('yeq -> aoz', function() {
+      expect( translate('yeq') ).toBe('aoz');
     });
   });
 });
